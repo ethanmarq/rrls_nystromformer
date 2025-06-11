@@ -10,10 +10,10 @@ with landmarks chosen using Recursive Randomized Ridge Leverage Scores.
 
 1. Loss Issue where some gradients go to Nan. To see full Gradients, uncomment lines  158-164 in RRLS_Nystrom/train_translate_nystrom
 Inf Gradients:
-encoder_embedding.lut.weight: inf
-encoder.transformer_blocks.0.multi_head_attention.attention_blocks.0.query_embed.weight: inf
-encoder.transformer_blocks.0.multi_head_attention.attention_blocks.0.query_embed.bias: inf
-encoder.transformer_blocks.0.multi_head_attention.attention_blocks.0.key_embed.weight: inf
+- encoder_embedding.lut.weight: inf
+- encoder.transformer_blocks.0.multi_head_attention.attention_blocks.0.query_embed.weight: inf
+- encoder.transformer_blocks.0.multi_head_attention.attention_blocks.0.query_embed.bias: inf
+- encoder.transformer_blocks.0.multi_head_attention.attention_blocks.0.key_embed.weight: inf
 
 
 2. Divide by zero warning before first epoch. I believe this is due to num_landmarks not being initialized and being defaulted to 0.
