@@ -3,7 +3,7 @@
 Nystrom Attention applies the nystorm attention to the matrix multiplicaiton of Self-Attention 
 with landmarks chosen using Recursive Randomized Ridge Leverage Scores.
 
-
+---
 
 
 ## Current bugs
@@ -18,6 +18,7 @@ Hyperparameters to tune:
 - Gradient clipping max norm (RRLS_Nystrom/train_translate_nystrom.py)
 - num_landmarks (RRLS_Nystrom/train_traintranslate_nystrom.py)
 
+---
 
 ### Install Requirements
 ```
