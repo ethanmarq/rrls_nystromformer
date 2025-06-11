@@ -7,7 +7,7 @@ with landmarks chosen using Recursive Randomized Ridge Leverage Scores.
 
 
 ## Current bugs
-Loss does not decrease, hence it is not learning. However loss is no longer Nan and RRLS Nystrom
+1. Loss does not decrease, hence it is not learning. However loss is no longer Nan and RRLS Nystrom
 is run rather than Standard Attention.
 
 My presumption is to tune hyperparameters and remove or adjust gradient clipping.
@@ -17,6 +17,11 @@ Hyperparameters to tune:
 - learning_rate (RRLS_Nystrom/train_translate_nystrom.py)
 - Gradient clipping max norm (RRLS_Nystrom/train_translate_nystrom.py)
 - num_landmarks (RRLS_Nystrom/train_traintranslate_nystrom.py)
+
+
+2. Divide by zero warning before first epoch. I believe this is due to num_landmarks not being initialized and being defaulted to 0.
+
+
 
 ---
 
