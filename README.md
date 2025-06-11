@@ -18,6 +18,9 @@ Hyperparameters to tune:
 - Gradient clipping max norm (RRLS_Nystrom/train_translate_nystrom.py)
 - num_landmarks (RRLS_Nystrom/train_traintranslate_nystrom.py)
 
+The model does not learn small batches very well, so it can likely be an issue with the backward pass itself.
+Next plan is to check gradients in backward pass.
+
 
 2. Divide by zero warning before first epoch. I believe this is due to num_landmarks not being initialized and being defaulted to 0.
 

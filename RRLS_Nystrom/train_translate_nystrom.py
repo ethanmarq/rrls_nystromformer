@@ -18,7 +18,7 @@ PRINT_INTERVAL = 5000
 VALIDATE_AMOUNT = 10
 SAVE_INTERVAL = 5000
 
-batch_size = 128
+batch_size = 6
 embed_dim = 64
 num_blocks = 2
 num_heads = 1  # Must be factor of token size
